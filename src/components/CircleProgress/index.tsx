@@ -6,8 +6,8 @@ import sizeHelper from '../../utils/Helpers';
 import { theme } from '../../utils/Themes';
 
 const CircleProgressWithText = ({
-  current = 45,       // Current progress value (e.g., 45)
-  total = 60,         // Total value (e.g., 60)
+  current = 1,       // Current progress value (e.g., 45)
+  total = 40,         // Total value (e.g., 60)
   size = 110,
   strokeWidth = 15,
   color = theme.colors.primary,

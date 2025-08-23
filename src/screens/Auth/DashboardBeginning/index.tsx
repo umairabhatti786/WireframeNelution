@@ -30,8 +30,8 @@ const DashboardBeginningScreen = ({ navigation }: any) => {
                  <CustomText
                   text={'Trainingsplan wurde '}
                   color={theme.colors.white}
-                  fontWeight="800"
-                  fontFam={fonts.InterDisplay_ExtraBold}
+                  fontWeight="600"
+                  fontFam={fonts.Inter_Medium}
                   size={40}
                 />
               <View
@@ -43,22 +43,22 @@ const DashboardBeginningScreen = ({ navigation }: any) => {
               >
                 <CustomText
                   text={'noch nicht'}
-                  fontWeight="800"
+                  fontWeight="600"
                   color={theme.colors.primary}
-                  fontFam={fonts.InterDisplay_ExtraBold}
+                  fontFam={fonts.Inter_Medium}
                   size={40}
                 />
                 <CustomText
                   text={'erstellt'}
                   color={theme.colors.white}
-                  fontWeight="800"
-                  fontFam={fonts.InterDisplay_ExtraBold}
+                  fontWeight="600"
+                  fontFam={fonts.Inter_Medium}
                   size={40}
                 />
               </View>
               <CustomText
                 text={`Damit Mr. Miles Deinen Trainingsplan erstellen kann, fülle den Fragebogen aus.`}
-                style={{ textAlign: 'center', paddingHorizontal: '10%' }}
+                style={{ textAlign: 'center', paddingHorizontal: '10%',marginTop:sizeHelper.calHp(20) }}
                 color={theme.colors.white}
               />
             </View>
@@ -87,7 +87,7 @@ const DashboardBeginningScreen = ({ navigation }: any) => {
               </View>
               <CustomText
                 text={`Zum Start hat Mr. Miles noch ein paar Fragen an Dich! Bist du bereit?`}
-                style={{ textAlign: 'center', paddingHorizontal: '10%' }}
+                style={{ textAlign: 'center', paddingHorizontal: '10%',marginTop:sizeHelper.calHp(20) }}
                 color={theme.colors.white}
               />
             </View>
@@ -99,7 +99,7 @@ const DashboardBeginningScreen = ({ navigation }: any) => {
             text="Fragebogen öffnen"
             onPress={() => {
               if (!isStart) {
-                setProgress(46);
+                setProgress(1);
                 setStart(true)
 
                 return
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     borderRadius: sizeHelper.calWp(45),
   },
   topContainer: {
-    gap: sizeHelper.calWp(20),
+    // gap: sizeHelper.calWp(10),
     alignSelf: 'center',
     paddingTop: '5%',
     alignItems: 'center',

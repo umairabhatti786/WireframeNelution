@@ -62,7 +62,7 @@ const CustomButton = ({
         text={text}
         color={textColor || theme.colors.black}
         size={size || 22}
-        fontWeight={fontWeight || '600'}
+        // fontWeight={"600"}
         fontFam={fontFam || fonts.Inter_Medium}
       />
       {children}
